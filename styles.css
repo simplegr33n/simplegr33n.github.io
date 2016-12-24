@@ -45,7 +45,7 @@ a:hover{
 }
 
 .panel-heading.preview img{
-	width: 100%;
+	width: 33%;
 	height: width;
 }
 
@@ -60,6 +60,10 @@ a:hover{
 
 .panel-body {
 	background-color: #5288DB;
+}
+
+col-md-4 {
+	width: 25%;
 }
 
 
