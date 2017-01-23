@@ -1,9 +1,7 @@
 body {
-	background-color:  #339933;
-	overflow: hidden;
-    background-size: 100%;
-    background-position: center;
-    background: url("resources/background.png") no-repeat;
+    background: url("resources/background01.png") no-repeat;
+    background-size: cover;
+    overflow: hidden;
 }
 
 
