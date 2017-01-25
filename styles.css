@@ -64,6 +64,17 @@ p {
 	background-color: #3939ac;
 }
 
+
+.home-button {
+	margin-left: 124px;
+}
+
+.home-button-image {
+		height: 64px;
+	width: 64px;
+	margin-top: 8px;
+}
+
 .icons {
 	height: 85%;
 }
