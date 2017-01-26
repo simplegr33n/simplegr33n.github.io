@@ -3,19 +3,32 @@
   <head>
     <title>ggdev3</title>
 
-	<link rel="stylesheet" href="styles.css">
+	<link rel="stylesheet" href="stylesheets/styles.css">
+
+	<script type="text/javascript">
+	$('#home-button-image').click(function(){
+    	$(this).animate({height:'300'});
+	});
+	</script>
 
   </head>
 
   <body>
 
 	  <div class="background">
+			
 
-		  <div class="phone">
+		<div id="contact-icons">
+			<a href="https://github.com/simplegr33n/android-game-campaign">
+		   		<img src="resources/github-icon.png" class="contact-icon"/>
+		    </a>
+		</div>
+
+
+
+		<div id="phone">
 
 		  <div class="utility-bar">
-		  	
-		  
 		  </div>
 
 			  <div class="icons">
@@ -100,10 +113,9 @@
 
 					
 					<div class="home-button">
-						<a href="https://github.com/simplegr33n/">
-							<img src="resources/phone_home.png" class="home-button-image">
-						</a>
-
+						
+							<img src="resources/phone_home.png" id="home-button-image">
+							
 					</div>
 					
 				</row>
