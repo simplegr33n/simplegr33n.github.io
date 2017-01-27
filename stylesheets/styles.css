@@ -2,6 +2,7 @@ body {
     background: url("../resources/background001.png") no-repeat;
     background-size: cover;
     overflow: hidden;
+
 }
 
 
@@ -30,7 +31,8 @@ p {
 
 
 .background {
-	position: relative;
+	padding-top: 40px;
+
 }
 
 
