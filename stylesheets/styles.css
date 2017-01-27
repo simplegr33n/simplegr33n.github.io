@@ -30,30 +30,42 @@ p {
 
 
 .background {
-	padding-top: 40px;
+	position: relative;
 }
+
+
 
 
 .utility-bar {
-	height:20px;
-	width: 96.5%;
+	margin-left: 2.5%;
+	height:3%;
+	width: 94%;
 	background-color: #000033;
-	margin-bottom: 2px;
+	margin-bottom: 0.5%;
 }
+
 
 
 #phone {
 	background: url("../resources/phone.png") no-repeat;
 	background-size: 100%;
+	position: fixed;
 	height: 640px;
 	width: 320px;
-	margin:0 auto;
-	padding-top: 66px;
-	padding-left: 8px;
+    right: 0;
+    left: 0;
+    margin-right: auto;
+    margin-left: auto;
+	bottom: 16px;
+}
+
+#phone-top {
+	padding-left: 0.5%;
+	height: 10.5%;
 }
 
 .col-third {
-	height: 118px;
+	height: 21.6%;
 	width: 25.5%;
 	padding-right: 3%;
 	padding-left: 3%;
@@ -66,46 +78,39 @@ p {
 
 
 .home-button {
-	margin-left: 124px;
+	margin-left: 39%;
 }
 
 #home-button-image {
-	height: 64px;
-	width: 64px;
-	margin-top: 8px;
+	height: 30%;
+	width: 30%;
+	margin-top: 5%;
 }
 
 .icons {
-	height: 85%;
+	margin-left: 2.5%;
+	height: 83%;
 }
 
 .icon-image {
 	width: 100%;
 }
 
-.title-text {
-	padding-top: 32px;
-	padding-bottom: 24px;
-	font-size: 44px;
-	text-align: center;
-}
 
 .icon-text {
 	font-family: "Helvetica";
 	font-size: 12px;
-	margin-top: -2px;
+	margin-top: 0.5%;
 	font-weight: bold;
 	text-align: center;
 }
 
 #contact-icons {
-    position: relative;
+    position: absolute;
+    right: 6px;
 }
 
 .contact-icon {
-    position: absolute;
-    top: -32px;
-    right: 6px;
     width: 48px;
     height: 48px;
 }

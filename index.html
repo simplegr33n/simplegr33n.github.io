@@ -6,9 +6,40 @@
 	<link rel="stylesheet" href="stylesheets/styles.css">
 
 	<script type="text/javascript">
-	$('#home-button-image').click(function(){
-    	$(this).animate({height:'300'});
-	});
+		var phoneUp = true;
+
+		function holsterPhone() {
+			if (phoneUp == true) {
+				document.getElementById('phone').style.height = '128px';
+				document.getElementById('phone').style.width = '64px';
+
+	
+
+
+				document.getElementById('one').style.fontSize = '0px';
+				document.getElementById('two').style.fontSize = '0px';
+				document.getElementById('three').style.fontSize = '0px';		
+				document.getElementById('four').style.fontSize = '0px';
+				document.getElementById('five').style.fontSize = '0px';
+				document.getElementById('six').style.fontSize = '0px';
+
+				phoneUp = false;
+
+			} else if (phoneUp == false) {
+				document.getElementById('phone').style.height = '640px';
+				document.getElementById('phone').style.width = '320px';
+
+				document.getElementById('one').style.fontSize = '12px';
+				document.getElementById('two').style.fontSize = '12px';
+				document.getElementById('three').style.fontSize = '12px';		
+				document.getElementById('four').style.fontSize = '12px';
+				document.getElementById('five').style.fontSize = '12px';
+				document.getElementById('six').style.fontSize = '12px';
+
+				phoneUp = true;
+			}
+		}
+
 	</script>
 
   </head>
@@ -16,20 +47,26 @@
   <body>
 
 	  <div class="background">
-			
 
-		<div id="contact-icons">
-			<a href="https://github.com/simplegr33n/android-game-campaign">
-		   		<img src="resources/github-icon.png" class="contact-icon"/>
-		    </a>
+		<div id="top-bar">
+
+				<div id="contact-icons">
+					<a href="https://github.com/simplegr33n/">
+				   		<img src="resources/github-icon.png" class="contact-icon"/>
+				    </a>
+				</div>
+
 		</div>
-
-
 
 		<div id="phone">
 
+		  <div id="phone-top">	
+		  </div>
+
 		  <div class="utility-bar">
 		  </div>
+
+
 
 			  <div class="icons">
 
@@ -39,8 +76,8 @@
 						<div class="col-third">
 							<img src="https://raw.githubusercontent.com/simplegr33n/android-game-campaign/master/screenshots/logos/logo1.jpg" class="icon-image">
 
-					  		<p class="icon-text">
-					  		Campaign Game
+					  		<p class="icon-text" id="one">
+					  			Campaign Game
 					  		</p>
 						</div>
 					</a>
@@ -48,7 +85,7 @@
 					<a href="https://github.com/simplegr33n/android-color-memory-game">
 						<div class="col-third">
 							<img src="https://raw.githubusercontent.com/simplegr33n/android-color-memory-game/master/screenshots/logos/newlogo.png" class="icon-image">
-					  		<p class="icon-text">
+					  		<p class="icon-text" id="two">
 								Color Memory
 					  		</p>
 						</div>
@@ -59,9 +96,9 @@
 					<a href="https://github.com/simplegr33n/android-pi-aid">
 						<div class="col-third">
 							<img src="https://raw.githubusercontent.com/simplegr33n/android-pi-aid/master/screenshots/logos/logo.png" class="icon-image">
-					  			<p class="icon-text">
-							Pi-Aid
-					  		</p>
+					  			<p class="icon-text" id="three">
+									Pi-Aid
+					  			</p>
 						</div>
 					</a>
 				</row>
@@ -71,14 +108,18 @@
 					<a href="https://github.com/simplegr33n/android-reference-criminal-code">
 						<div class="col-third">
 							<img src="https://raw.githubusercontent.com/simplegr33n/android-reference-criminal-code/master/screenshots/logos/logo2.png" class="icon-image">
-					  		<p class="icon-text">Criminal Code of Canada</p>
+					  		<p class="icon-text" id="four">
+					  			Criminal Code of Canada
+					  		</p>
 						</div>
 					</a>
 
 					<a href="https://github.com/simplegr33n/android-tab-chess">
 						<div class="col-third">
 							<img src="https://raw.githubusercontent.com/simplegr33n/android-tab-chess/master/screenshots/logos/logo.png" class="icon-image">
-					  		<p class="icon-text">Tab Chess</p>
+					  		<p class="icon-text" id="five">
+					  			Tab Chess
+					  		</p>
 						</div>
 					</a>
 
@@ -87,8 +128,8 @@
 						<div class="col-third">
 							<img src="https://raw.githubusercontent.com/simplegr33n/android-lend-it/master/screenshots/logos/logo.png" class="icon-image">
 
-					  		<p class="icon-text">
-					  		Lend It
+					  		<p class="icon-text" id="six">
+					  			Lend It
 					  		</p>
 						</div>
 					</a>
@@ -112,7 +153,7 @@
 				<row>
 
 					
-					<div class="home-button">
+					<div class="home-button" onClick = "holsterPhone();">
 						
 							<img src="resources/phone_home.png" id="home-button-image">
 							
