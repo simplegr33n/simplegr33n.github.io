@@ -84,6 +84,8 @@ p {
 }
 
 #home-button-image {
+	cursor: pointer; 
+	cursor: hand; 
 	height: 30%;
 	width: 30%;
 	margin-top: 5%;
@@ -101,7 +103,7 @@ p {
 
 .icon-text {
 	font-family: "Helvetica";
-	font-size: 12px;
+	font-size: 11px;
 	margin-top: 0.5%;
 	font-weight: bold;
 	text-align: center;
@@ -109,7 +111,8 @@ p {
 
 #contact-icons {
     position: absolute;
-    right: 6px;
+    top: 12px;
+    right: 12px;
 }
 
 .contact-icon {
