@@ -62,6 +62,8 @@ p {
 }
 
 #phone-top {
+	cursor: pointer; 
+	cursor: hand; 
 	padding-left: 0.5%;
 	height: 10.5%;
 }
@@ -112,11 +114,18 @@ p {
 #contact-icons {
     position: absolute;
     top: 12px;
-    right: 12px;
+    right: 0px;
 }
 
 .contact-icon {
     width: 48px;
     height: 48px;
 }
+
+.linkedin-icon {
+	margin-left: 7%;
+    width: 44%;
+    height: 44%;
+}
+
 
