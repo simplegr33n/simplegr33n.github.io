@@ -1,8 +1,15 @@
 body {
-    background: url("../resources/background001.png") no-repeat;
-    background-size: cover;
-    overflow: hidden;
 
+}
+
+.background-art {
+    background: url("../resources/backgrounds/background001.png") no-repeat fixed;
+	background-size: cover;
+}
+
+.background-real {
+    background: url("../resources/backgrounds/background001real.jpg") no-repeat fixed;
+	background-size: cover;
 }
 
 
@@ -18,7 +25,7 @@ a {
 	font-weight: bold;
 }
 
-a:hover{
+a:hover {
     text-decoration: none;
 }
 
@@ -32,7 +39,6 @@ p {
 
 .background {
 
-
 }
 
 
@@ -40,7 +46,7 @@ p {
 
 .utility-bar {
 	margin-left: 2.5%;
-	height:3%;
+	height: 3%;
 	width: 94%;
 	background-color: #000033;
 	margin-bottom: 0.5%;
@@ -49,7 +55,7 @@ p {
 
 
 #phone {
-	background: url("../resources/phone.png") no-repeat;
+	background: url("../resources/items/phone.png") no-repeat;
 	background-size: 100%;
 	position: fixed;
 	height: 640px;
@@ -113,28 +119,42 @@ p {
 
 #contact-icons {
     position: absolute;
-    top: 12px;
+    width: 200px;
     right: 0px;
 }
 
-.contact-icon {
+.github-icon {
     width: 48px;
     height: 48px;
 }
 
 .linkedin-icon {
 	margin-left: 7%;
-    width: 44%;
-    height: 44%;
+    width: 56px;
+    height: 48px;
 }
 
-#change-view {
-	height: 80px;
-	width: 80px;
+.email-icon {
+    width: 56px;
+    height: 56px;
+    margin-right: 4px;
+}
 
+
+#background-button {
+	cursor: pointer; 
+	cursor: hand; 
+	border: 2px solid white;
+	height: 96px;
+	width: 96px;
+	background-color: #FFFFFF;
+	background: url('../resources/buttons/real-button.png');
+	background-size: cover;
 	position: fixed;
 	bottom: 0px;
 	margin-bottom: 1.5%;
 	margin-left: 1%;
 }
+
+
 

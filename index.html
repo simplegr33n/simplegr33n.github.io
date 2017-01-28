@@ -5,10 +5,11 @@
 
 	<link rel="stylesheet" href="stylesheets/styles.css">
 
-	<link rel="image_src" href="resources/title-image.png" />
+	<link rel="image_src" href="resources/helper/title-image.png" />
 
 	<script type="text/javascript">
 		var phoneUp = true;
+		var realUp = false
 
 		function holsterPhone() {
 			if (phoneUp == true) {
@@ -38,9 +39,25 @@
 				document.getElementById('four').style.fontSize = '11px';
 				document.getElementById('five').style.fontSize = '11px';
 				document.getElementById('six').style.fontSize = '11px';
-
-			
 				phoneUp = true;
+			}
+		}
+
+		function changeBG() {
+			if (realUp == false) {
+
+				document.body.className = 'background-real';
+				document.getElementById('background-button').style.background = 'url(resources/buttons/art-button.png)';
+
+				realUp = true;
+
+			} else if (realUp == true) {	
+
+				document.body.className = 'background-art';
+				document.getElementById('background-button').style.background = 'url(resources/buttons/real-button.png)';
+				
+				realUp = false;
+
 			}
 		}
 
@@ -49,22 +66,26 @@
 
   </head>
 
-  <body>
+  <body class="background-art">
 
 	  <div class="background">
 
 
 		<div id="top-bar">
 
-				<div id="contact-icons">
+				<div id="contact-icons">			
+
 					<a href="https://github.com/simplegr33n/">
-				   		<img src="resources/github-icon.png" class="contact-icon"/>
+				   		<img src="resources/buttons/github-icon.png" class="github-icon"/>
 				    </a>
 
 				    <a href="https://www.linkedin.com/in/geoff-golda">
-				   		<img src="resources/linkedin-icon.png" class="linkedin-icon"/>
+				   		<img src="resources/buttons/linkedin-icon.png" class="linkedin-icon"/>
 				    </a>
 
+    				<a href="mailto:ggdev3@gmail.com" target="_top">
+				   		<img src="resources/buttons/email-icon.png" class="email-icon"/>
+				    </a>
 			
 				</div>
 
@@ -167,20 +188,20 @@
 					
 					<div class="home-button" >
 						
-							<img src="resources/phone_home.png" onClick="holsterPhone();" id="home-button-image">
+							<img src="resources/buttons/phone_home.png" onClick="holsterPhone();" id="home-button-image">
 							
 					</div>
 					
 				</row>
 			  </div>
 
-		  </div>
+		  	</div>
 
-		  <div id="change-view">
-			
-				<!-- stuff go here -->
-			
-		  </div>
+		
+			<div id="background-button" onClick="changeBG();">
+					<!-- stuff go here -->
+			</div>
+		
 
 	 </div>
   
