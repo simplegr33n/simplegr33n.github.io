@@ -128,4 +128,13 @@ p {
     height: 44%;
 }
 
+#change-view {
+	height: 80px;
+	width: 80px;
+
+	position: fixed;
+	bottom: 0px;
+	margin-bottom: 1.5%;
+	margin-left: 1%;
+}
 
