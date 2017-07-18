@@ -13,6 +13,7 @@
 
 		function holsterPhone() {
 			if (phoneUp == true) {
+                phoneUp = false;
 				document.getElementById('phone').style.height = '128px';
 				document.getElementById('phone').style.width = '64px';
 
@@ -24,10 +25,12 @@
 				document.getElementById('four').style.fontSize = '0px';
 				document.getElementById('five').style.fontSize = '0px';
 				document.getElementById('six').style.fontSize = '0px';
-
-				phoneUp = false;
+                document.getElementById('seven').style.fontSize = '0px';
+				document.getElementById('eight').style.fontSize = '0px';
+				document.getElementById('nine').style.fontSize = '0px';
 
 			} else if (phoneUp == false) {
+                phoneUp = true;
 				document.getElementById('phone').style.height = '640px';
 				document.getElementById('phone').style.width = '320px';
 
@@ -39,7 +42,10 @@
 				document.getElementById('four').style.fontSize = '11px';
 				document.getElementById('five').style.fontSize = '11px';
 				document.getElementById('six').style.fontSize = '11px';
-				phoneUp = true;
+                document.getElementById('seven').style.fontSize = '11px';
+				document.getElementById('eight').style.fontSize = '11px';
+				document.getElementById('nine').style.fontSize = '11px';
+ 
 			}
 		}
 
@@ -107,7 +113,7 @@
 					<a href="https://play.google.com/store/apps/dev?id=6440640153129088567">
 						<div class="col-third">
 							<img src="resources/app-icons/pocketlaw.png" class="icon-image">
-					  		<p class="icon-text" id="four">
+					  		<p class="icon-text" id="one">
 					  			PocketLaw
 					  		</p>
 						</div>
@@ -116,7 +122,7 @@
 					<a href="https://play.google.com/store/apps/details?id=org.pocketlaw.cld">
 						<div class="col-third">
 							<img src="resources/app-icons/pocketlaw-cld.png"resources/app-icons/pocketlaw.png class="icon-image">
-					  		<p class="icon-text" id="five">
+					  		<p class="icon-text" id="two">
 					  			Legal Dictionary
 					  		</p>
 						</div>
@@ -127,7 +133,7 @@
 						<div class="col-third">
 							<img src="https://raw.githubusercontent.com/simplegr33n/android-lend-it/master/screenshots/logos/logo.png" class="icon-image">
 
-					  		<p class="icon-text" id="six">
+					  		<p class="icon-text" id="three">
 					  			Lend It
 					  		</p>
 						</div>
@@ -144,7 +150,7 @@
 						<div class="col-third">
 							<img src="https://raw.githubusercontent.com/simplegr33n/android-game-campaign/master/screenshots/logos/logo1.jpg" class="icon-image">
 
-					  		<p class="icon-text" id="one">
+					  		<p class="icon-text" id="four">
 					  			Campaign Game
 					  		</p>
 						</div>
@@ -153,7 +159,7 @@
 					<a href="https://github.com/simplegr33n/android-color-memory-game">
 						<div class="col-third">
 							<img src="https://raw.githubusercontent.com/simplegr33n/android-color-memory-game/master/screenshots/logos/newlogo.png" class="icon-image">
-					  		<p class="icon-text" id="two">
+					  		<p class="icon-text" id="five">
 								Color Memory
 					  		</p>
 						</div>
@@ -164,7 +170,7 @@
                     <a href="https://github.com/simplegr33n/android-tab-chess">
 						<div class="col-third">
 							<img src="https://raw.githubusercontent.com/simplegr33n/android-tab-chess/master/screenshots/logos/logo.png" class="icon-image">
-					  		<p class="icon-text" id="five">
+					  		<p class="icon-text" id="six">
 					  			Tab Chess
 					  		</p>
 						</div>
@@ -177,7 +183,7 @@
                     <a href="https://github.com/simplegr33n/android-pi-aid">
 						<div class="col-third">
 							<img src="https://raw.githubusercontent.com/simplegr33n/android-pi-aid/master/screenshots/logos/logo.png" class="icon-image">
-					  			<p class="icon-text" id="three">
+					  			<p class="icon-text" id="seven">
 									Pi-Aid
 					  			</p>
 						</div>
