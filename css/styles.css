@@ -119,7 +119,7 @@ p {
 
 #contact-icons {
     position: absolute;
-    width: 200px;
+    width: 250px;
     right: 0px;
 }
 
@@ -129,8 +129,13 @@ p {
 }
 
 .linkedin-icon {
-	margin-left: 7%;
+	margin-left: 2%;
     width: 56px;
+    height: 48px;
+}
+
+.instagram-icon {
+    width: 48px;
     height: 48px;
 }
 
